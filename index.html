@@ -18,6 +18,7 @@
       }
       .progressbar-mark1 {
         left: 35%;
+        color: #0c0;
       }
       .progressbar-mark2 {
         left: 45%;
@@ -206,7 +207,7 @@
     <div class="row-fluid" style="padding-bottom: 40px;padding-top: 20px">
       <h4> Deadline para contribuições: Sexta, 07 de fevereiro de 2014.</h4>
       <div class="span4">
-        <p>Contribuições até agora: <b>R$60,00</b></p>
+        <p>Contribuições até agora: <b>R$90,00</b></p>
       </div>
       <div class="span8">
 <!--        <div class="progress progress-striped active">
@@ -216,6 +217,10 @@
           <div id="my-progressbar-mark1" class="progressbar-mark1">R$ 90,00</div>
           <div id="my-progressbar-mark2" class="progressbar-mark2">R$ 140,00</div>
           <div id="my-progressbar-mark3" class="progressbar-mark3">R$ 220,00</div>
+      </div>
+      <div class="span8">
+        <h5> Já conseguimos chegar no primeiro objetivo. Vamos contribuir para
+          conseguir uma máquina para as gerações. </h5>
       </div>
     </div>
   </div>
@@ -277,13 +282,14 @@ window.onload = function() {
   pbi = {};
   pbi[ProgressBar.OPTION_NAME.ITEM_ID] = "mark1";
   pbi[ProgressBar.OPTION_NAME.TYPE] = ProgressBar.OPTION_VALUE.TYPE.BAR;
-  pbi[ProgressBar.OPTION_NAME.PERCENT] = 100*60/220;
+  pbi[ProgressBar.OPTION_NAME.PERCENT] = 100*90/220;
   progressBar.createItem(pbi);
 
   pbi = {};
   pbi[ProgressBar.OPTION_NAME.ITEM_ID] = "line1";
   pbi[ProgressBar.OPTION_NAME.TYPE] = ProgressBar.OPTION_VALUE.TYPE.LINE;
   pbi[ProgressBar.OPTION_NAME.PERCENT] = 100*90/220;
+  pbi[ProgressBar.OPTION_NAME.COLOR_ID] = "green";
   progressBar.createItem(pbi);
 
   pbi = {};
